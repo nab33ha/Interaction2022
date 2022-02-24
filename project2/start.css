@@ -1,0 +1,50 @@
+*{
+  padding: 0;
+  margin: 0;
+}
+@font-face{
+  font-family: skia;
+  src: url(skia_regular-webfont.woff);
+}
+.info{
+  position: absolute;
+  left: 0;
+  z-index: -2;
+  height: 800px;
+  width: 500px;
+  padding-left: 100px;
+  top: 50px;
+  font-size: x-large;
+  color: #CDA9B8 ;
+  font-family: skia;
+}
+body{
+  background-color: #3B2A31 ;
+}
+.door{
+  position: relative;
+  z-index: 1;
+  height: 100vh;
+  width: 100%;
+  border-width: 0;
+  background: url(door.png);
+background-size: cover;
+  display: flex;
+  margin-left: 1px;
+  margin-right: 0;
+
+  animation: slide 15s ease-in-out infinite;
+}
+@keyframes slide{
+ 0%{ transform: translate(0,0);
+
+  }
+25%{transform: translate(20%,0)
+}
+  50%{ transform: translate(50%,0);
+}
+
+}
+100%{transform: translate(0%,0)
+
+}

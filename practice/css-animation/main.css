@@ -1,0 +1,57 @@
+body{
+	background-color: darkgreen;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	min-height: 100vh;
+	flex-direction: column;
+	
+}
+.word{
+	color: darkgreen;
+	font-size: 0;
+	line-height: 3;
+	animation: move 3s ease-in-out infinite;
+}
+.word span{
+	font-size: 5rem;
+	display: inline-block;
+	animation: move 3s ease-in-out infinite;
+}
+
+@keyframes move{
+	0%{ transform: translate(-30%,0);
+
+	}
+	25%{text-shadow: 0 25px 5px rgba(0, 0, 0, 1.0);
+
+	}
+	50%{ box-shadow: rgba(0, 0, 0, 2.0);
+
+	}
+
+	100%{ transform: translate(30%,0);
+
+	}
+}
+
+.word span:nth-child(2){
+	animation-delay: .5s;
+
+}
+.word span:nth-child(3){
+	animation-delay: 1s;
+
+}
+.word span:nth-child(4){
+	animation-delay: 1.5s;
+
+}
+.word span:nth-child(5){
+	animation-delay: 2s;
+
+}
+.word span:nth-child(6){
+	animation-delay: 2.5s;
+
+}
